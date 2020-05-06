@@ -1,0 +1,27 @@
+{
+   "name": "natours",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "compile:sass": "node-sass sass/main.scss css/style.css --watch",
+      "live-server": "live-server",
+      "dev": "concurrently --kill-others \"npm run compile:sass\" \"npm run live-server\""
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ashish-puttaa/natours.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/ashish-puttaa/natours/issues"
+   },
+   "homepage": "https://github.com/ashish-puttaa/natours#readme",
+   "devDependencies": {
+      "concurrently": "^5.2.0",
+      "live-server": "^1.2.1",
+      "node-sass": "^4.14.1"
+   }
+}
