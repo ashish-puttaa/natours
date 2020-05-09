@@ -250,11 +250,14 @@ body {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  position: relative;
   height: 52rem; }
+  .card__inner {
+    position: relative;
+    height: 100%;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d; }
   .card__side {
     height: 52rem;
-    transition: all 0.8s ease;
     position: absolute;
     top: 0;
     left: 0;
@@ -274,10 +277,8 @@ body {
         background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
+  .card:hover .card__inner {
+    transform: rotateY(180deg); }
   .card__picture {
     background-size: cover;
     height: 23rem;

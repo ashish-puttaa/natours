@@ -2,12 +2,17 @@
    // FUNCTIONALITY
    perspective: 150rem;
    -moz-perspective: 150rem;
-   position: relative;
    height: 52rem; // to fix 0 height due to absolute positioning of children
+
+   &__inner {
+      position: relative;
+      height: 100%; // to fix 0 height due to absolute positioning of children
+      transition: all 0.8s ease;
+      transform-style: preserve-3d;
+   }
 
    &__side {
       height: 52rem;
-      transition: all 0.8s ease;
       position: absolute;
       top: 0;
       left: 0;
@@ -51,12 +56,8 @@
       }
    }
 
-   &:hover &__side--front {
-      transform: rotateY(-180deg);
-   }
-
-   &:hover &__side--back {
-      transform: rotateY(0);
+   &:hover &__inner {
+      transform: rotateY(180deg);
    }
 
    // FRONT SIDE STYLING
