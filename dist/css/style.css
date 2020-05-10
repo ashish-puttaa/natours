@@ -598,10 +598,9 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -20%;
   z-index: 1500;
   opacity: 0;
-  margin-left: -20rem;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
 
@@ -644,7 +643,7 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
-  margin-left: 0; }
+  left: 0; }
 
 .navigation__icon {
   position: relative;
