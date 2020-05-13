@@ -12,8 +12,13 @@
 
    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-   @include respond(phone) {
+   @include respond(tab-land) {
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+   }
+
+   @include respond(tab-port) {
+      height: 100vh;
+      clip-path: none;
    }
 
    &__logo-box {
@@ -32,5 +37,9 @@
       left: 50%; /* In relation to the parent element */
       transform: translate(-50%, -50%); /* In relation to itself */
       text-align: center; /* Centers the button, which is just text */
+
+      @include respond(tab-port) {
+         top: 50%;
+      }
    }
 }

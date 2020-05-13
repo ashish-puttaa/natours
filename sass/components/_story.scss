@@ -15,7 +15,7 @@
       padding-left: 7rem;
    }
 
-   @include respond(phone) {
+   @include respond(tab-port) {
       transform: skewX(0);
    }
 
@@ -31,7 +31,7 @@
       position: relative;
       overflow: hidden;
 
-      @include respond(phone) {
+      @include respond(tab-port) {
          transform: translateX(-3rem) skewX(0);
       }
    }
@@ -45,7 +45,7 @@
    &__text {
       transform: skewX(12deg);
 
-      @include respond(phone) {
+      @include respond(tab-port) {
          transform: skewX(0);
       }
    }
