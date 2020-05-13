@@ -1,2 +1,4 @@
 node_modules
-css/style.css
+dist/css/style.comp.css
+dist/css/style.concat.css
+dist/css/style.prefix.css
